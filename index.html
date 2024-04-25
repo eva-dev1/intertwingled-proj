@@ -91,7 +91,6 @@
   margin-left: 650px;
   margin-top: 50px;
   margin-right: 110px;
-  background-color: rgba(255, 255, 255, 0.27);
 }
   
   .container2 {
@@ -99,7 +98,6 @@
   align-items: center;
   margin-left: 540px;
   margin-right: 260px;
-  background-color: rgba(255, 255, 255, 0.27);
 }
   
   .container3 {
@@ -107,7 +105,6 @@
     align-items: center;
     margin-left: 760px;
     margin-right: 60px;
-    background-color: rgba(255, 255, 255, 0.27);
   }
   
   #t1 {
@@ -420,11 +417,20 @@
   body{
     background-image: url('gif.gif');
     background-size: cover;
-    
+    transition: background-image 1s ease;
+    animation: changeBackground 30s infinite alternate;
     height: 100vh;
     padding:0;
     margin:0;
 }
+  
+  @keyframes changeBackground {
+      0% { background-image: url('gif.gif'); }
+      33% { background-image: url('https://i.pinimg.com/originals/ad/2b/d2/ad2bd2f7f0151f37155cf9e53216f943.gif'); }
+     50% { background-image: url('gif.gif'); }
+    80% {background-image: url(https://i.giphy.com/H7rgfu3CGdGTlhOMTj.webp)}
+    100% {background-image: url(https://colourlex.com/wp-content/uploads/2021/02/ivory-black-painted-swatch-300x300.jpg)}
+    }
   
   
 </style>
